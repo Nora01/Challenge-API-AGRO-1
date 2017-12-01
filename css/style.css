@@ -1,0 +1,60 @@
+/* Paramétrage général */
+html { font-family: "Lato", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
+
+/* Paramétrage boostrap*/
+.keen-dashboard { padding-top: 80px; }
+.logo { width: 80px; margin-top: -10px; }
+.bottom-buffer { margin-bottom: 10px; }
+.top-buffer { margin-top: 10px; }
+.navbar-inverse { background-color: #213761 }
+.navbar-brand { color: white !important; height: 50px; font-family: "Lato"; font-size: 24px; max-width: 800px; overflow: hidden; }
+.chart-wrapper { margin: 10px; padding: 5px; -webkit-box-shadow: 0 5px 15px -7px #777; -moz-box-shadow: 0 5px 15px -7px #777; box-shadow: 0 5px 15px -7px #777; }
+.chart-stage-table { height: 410px; }
+.chart-title { font-family: "lato", "Segoe UI", Roboto, Helvetica; }
+.navbar-toggle { display: none; }
+@media (max-width:700px) {
+  .navbar-brand { font-size: 20px; }
+}
+@media (max-width:500px) {
+  .navbar-brand { font-size: 14px; }
+}
+@media (max-width:700px) {
+  .chart-wrapper { margin: 0px;}
+}
+
+/* Footer */
+.footer { position: fixed; margin-left:0px; bottom: 0px;}
+
+/* Liste déroulante de choix des stations*/
+#dropdownStations { padding: 10px; padding-right: 20px; padding-left: 20px; }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus { background-color: #64738f; }
+
+/* MAP */
+#container-map { visibility: hidden; }
+#map { height: 400px !important; width: 100% !important; }
+.chart-stage-map { height: 410px; }
+
+/* Températures */
+#container-temperatures { visibility: hidden; }
+#temperatures { min-width: 310px; height: 300px; margin: 0 auto; }
+
+/* Datatable */
+#container-data { visibility: hidden; }
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td { border: 0; }
+#export-button { float: right; margin-right: 16px; }
+
+/* Animation d'attente */
+.spinner { width: 50px; height: 21px; text-align: center; font-size: 15px; position: relative; margin-left: -128px; z-index: 999; margin-top: 17px; display: none; }
+.spinner > div { background-color: #1A2D4C; height: 100%; width: 6px; display: inline-block; -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out; animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+.spinner .rect2 { -webkit-animation-delay: -1.1s; animation-delay: -1.1s; }
+.spinner .rect3 { -webkit-animation-delay: -1.0s; animation-delay: -1.0s; }
+.spinner .rect4 { -webkit-animation-delay: -0.9s; animation-delay: -0.9s; }
+.spinner .rect5 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { transform: scaleY(0.4); -webkit-transform: scaleY(0.4); }
+  20% { transform: scaleY(1.0); -webkit-transform: scaleY(1.0); }
+}
